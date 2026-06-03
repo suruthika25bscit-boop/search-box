@@ -3,38 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Form</title>
+    <title>Search Box</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f4f4f4;
-        }
-
-        form {
+        .search-container {
+            max-width: 400px;
+            margin: 50px auto;
             display: flex;
             gap: 10px;
         }
 
         input[type="text"] {
-            width: 300px;
+            flex: 1;
             padding: 10px;
             font-size: 16px;
         }
 
         button {
             padding: 10px 20px;
-            font-size: 16px;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-<form action="https://formsubmit.co/"suruthika.25bscit@kprcas.ac.in"
+<form
+    action="https://formsubmit.co/suruthika.25bscit@kprcas.ac.in"
+    method="POST"
+    class="search-container"
+>
     <input
         type="text"
         name="search_query"
@@ -42,11 +38,11 @@
         required
     >
 
+    <button type="submit">Search</button>
+
     <!-- Optional FormSubmit settings -->
     <input type="hidden" name="_subject" value="New Search Query">
     <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit">Search</button>
 </form>
 
 </body>
